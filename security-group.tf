@@ -4,7 +4,7 @@
 
 module "bastion_sg" {
   source = "./modules/security-groups"
-  name        = "${var.account_name}-${var.environment}-bastion-sg"
+  name        = "${var.account_name}-${var.environment}-instance-sg"
   description = "Security Group for bastion"
   vpc_id      = var.vpc_id
   security_group_rules  = [
