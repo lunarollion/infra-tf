@@ -430,7 +430,7 @@ module "eks_cluster" {
 
     cc-cluster-v2 = {
       name          = "${var.account_name}-cc-cluster-ng-new-v2"
-      instance_types = ["m5.2xlarge"]
+      instance_types = ["t3.medium"]
       #create_launch_template = true
       #disk_size      = 100
       min_size      = 1
@@ -468,7 +468,7 @@ module "eks_cluster" {
 
     ol-cluster-v2 = {
       name          = "${var.account_name}-ol-cluster-ng-new-v2"
-      instance_types = ["m5.2xlarge"]
+      instance_types = ["t3.medium"]
       disk_size      = 100
       # create_launch_template = false
       # launch_template_name = ""
@@ -507,7 +507,7 @@ module "eks_cluster" {
 
     ol-cluster-test = {
       name          = "${var.account_name}-be-without-consul"
-      instance_types = ["m5.2xlarge"]
+      instance_types = ["t3.medium"]
       disk_size      = 100
       # create_launch_template = false
       # launch_template_name = ""
@@ -546,7 +546,7 @@ module "eks_cluster" {
 
     lunar-region = {
       name          = "${var.account_name}-lunar"
-      instance_types = ["m5.2xlarge"]
+      instance_types = ["t3.medium"]
       disk_size      = 100
       # create_launch_template = false
       # launch_template_name = ""
